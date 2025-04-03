@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "target": "ES2022", // Upgrade target to ES2022 for better performance
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve", // Change from "preserve" to "react-jsx" for Next.js 13+
+    "incremental": true,
+    "strictNullChecks": true, // Ensures better type safety
+    "forceConsistentCasingInFileNames": true, // Avoid case-sensitive import issues
+    "allowSyntheticDefaultImports": true, // Helps with ESM module compatibility
+    "paths": {
+      "@/*": [
+        "./*"
+      ]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    ".turbo"
+  ]
+}
